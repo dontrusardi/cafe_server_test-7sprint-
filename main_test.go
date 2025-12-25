@@ -125,7 +125,7 @@ func TestCafeSearch(t *testing.T) {
 			items = strings.Split(responseBody, ",")
 		}
 		
-		checkSubStr := true
+		checkSubStr := true // true or false 
 		for _, c := range items {
 			if !strings.Contains(strings.ToLower(c), strings.ToLower(v.search)) {
 				checkSubStr = false
